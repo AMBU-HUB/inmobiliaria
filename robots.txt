@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ambu-hub.github.io/inmobiliaria/sitemap.xml
