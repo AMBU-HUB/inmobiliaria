@@ -214,6 +214,35 @@ section[id],footer[id]{scroll-margin-top:84px}
 .tarjeta-form .btn{width:100%; padding:15px; font-size:15.5px; margin-top:6px}
 .nota{font-size:11.5px; color:var(--gris); margin-top:12px; text-align:center; line-height:1.5}
 
+/* ─────── tarifas ─────── */
+.tarifas{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin-top:40px}
+.tarifa{background:#fff; border:1px solid var(--linea); border-radius:var(--r); padding:26px 24px; box-shadow:var(--sombra-s); display:flex; flex-direction:column}
+.tarifa.destaca{border-color:var(--oro); box-shadow:0 2px 4px rgba(192,135,58,.14), 0 20px 40px -22px rgba(192,135,58,.6)}
+.tarifa .tag{font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--oro); margin-bottom:12px}
+.tarifa .cifra{font-family:Lora,Georgia,serif; font-size:44px; font-weight:600; color:var(--verde); line-height:1}
+.tarifa .cifra span{font-size:15px; font-family:Inter,sans-serif; font-weight:500; color:var(--gris); display:block; margin-top:8px}
+.tarifa p{font-size:14.5px; color:var(--gris); margin-top:14px; line-height:1.55}
+.tarifa ul{list-style:none; padding:0; margin:16px 0 0; display:grid; gap:9px; font-size:14px; color:var(--gris)}
+.tarifa li{display:flex; gap:9px; align-items:flex-start}
+.tarifa li svg{width:16px; height:16px; color:var(--verde); flex:none; margin-top:3px}
+.gratis{background:var(--verde); color:#fff; border-radius:var(--r); padding:26px 28px; margin-top:20px; display:flex; gap:16px; align-items:flex-start}
+.gratis svg{width:26px; height:26px; color:var(--oro-luz); flex:none; margin-top:2px}
+.gratis b{display:block; font-size:18px; margin-bottom:5px}
+.gratis span{color:#B8D2CC; font-size:15px}
+.letra-chica{font-size:13px; color:var(--gris); margin-top:20px; line-height:1.6}
+
+/* ─────── formulario propietario ─────── */
+.form-largo{background:#fff; border:1px solid var(--linea); border-radius:22px; padding:32px 30px; box-shadow:var(--sombra-s); max-width:760px; margin:38px auto 0; text-align:left}
+.form-largo h3{font-size:21px; margin-bottom:6px}
+.form-largo > p{font-size:14.5px; color:var(--gris); margin-bottom:24px}
+.tres{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+@media(max-width:640px){ .tres{grid-template-columns:1fr 1fr} }
+.campo textarea{width:100%; border:1px solid var(--linea); border-radius:12px; padding:12px 14px; font:inherit; font-size:15.5px; background:var(--crema); outline:0; min-height:96px; resize:vertical}
+.campo textarea:focus{border-color:var(--verde); background:#fff}
+.par-botones{display:flex; gap:11px; flex-wrap:wrap; margin-top:20px}
+.par-botones .btn{flex:1; min-width:170px; padding:15px}
+.resumen{background:var(--crema); border:1px dashed var(--linea); border-radius:14px; padding:16px 18px; margin-top:18px; font-size:13.5px; color:var(--gris); white-space:pre-wrap; line-height:1.6; max-height:200px; overflow:auto}
+
 /* ─────── zonas ─────── */
 .zonas{display:flex; flex-wrap:wrap; gap:9px; margin-top:32px}
 .zona{background:#fff; border:1px solid var(--linea); border-radius:999px; padding:9px 17px; font-size:14px; font-weight:500; color:var(--gris)}
@@ -331,8 +360,8 @@ dialog>form{position:sticky; top:0; height:0; z-index:3}
       <a href="#catalogo">Inmuebles</a>
       <a href="#servicios">Servicios</a>
       <a href="#vender">Vende o arrienda</a>
+      <a href="#tarifas">Tarifas</a>
       <a href="#agenda">Agendar visita</a>
-      <a href="#contacto">Contacto</a>
     </nav>
     <div class="redes" data-redes></div>
     <a class="btn btn-wa" data-wa data-mide="whatsapp_barra" href="#"><svg><use href="#wa"/></svg><span>WhatsApp</span></a>
@@ -452,12 +481,13 @@ dialog>form{position:sticky; top:0; height:0; z-index:3}
       <div>
         <p class="ojo">¿Tienes un inmueble?</p>
         <h2>Lo publicamos y te traemos los interesados.</h2>
-        <p class="bajada">Tú no tienes que atender llamadas a toda hora ni mostrar la casa a curiosos. Nosotros filtramos, mostramos y te llevamos solo lo serio.</p>
+        <p class="bajada">Tú no tienes que atender llamadas a toda hora ni mostrarle la casa a curiosos. Nosotros filtramos, mostramos y te llevamos solo lo serio.</p>
         <ul class="lista-ok">
+          <li><svg><use href="#check"/></svg>Publicar tu inmueble no tiene ningún costo</li>
           <li><svg><use href="#check"/></svg>Ficha con fotos y precio en este catálogo</li>
-          <li><svg><use href="#check"/></svg>Difusión por WhatsApp a quienes ya están buscando</li>
-          <li><svg><use href="#check"/></svg>Filtramos curiosos: solo te llevamos interesados reales</li>
+          <li><svg><use href="#check"/></svg>Difusión por WhatsApp y redes a quienes ya están buscando</li>
           <li><svg><use href="#check"/></svg>Revisión de documentos antes de publicar</li>
+          <li><svg><use href="#check"/></svg>Solo cobramos cuando el negocio se cierra</li>
         </ul>
       </div>
       <div class="tarjeta-form">
@@ -481,10 +511,142 @@ dialog>form{position:sticky; top:0; height:0; z-index:3}
           <label for="fBarrio">Barrio o sector</label>
           <input id="fBarrio" type="text" placeholder="Ej: Barrio Fátima">
         </div>
-        <a class="btn btn-wa" id="fEnviar" href="#" target="_blank" rel="noopener">
+        <a class="btn btn-wa" id="fEnviar" data-mide="captacion_rapida" href="#" target="_blank" rel="noopener">
           <svg><use href="#wa"/></svg>Enviar por WhatsApp
         </a>
-        <p class="nota">No se guarda ningún dato en esta página. El mensaje se abre en tu propio WhatsApp.</p>
+        <p class="nota">¿Prefieres mandar todos los datos de una vez? <a href="#publicar" style="color:var(--verde);font-weight:600">Llena la ficha completa</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TARIFAS ═══ -->
+  <section class="seccion" id="tarifas">
+    <div class="env centro">
+      <p class="ojo">Cuánto cuesta</p>
+      <h2>Publicar es gratis. Cobramos al cerrar.</h2>
+      <p class="bajada">Trabajamos con las tarifas que se manejan en Colombia. Acá están a la vista, para que sepas desde el primer día con qué cuentas.</p>
+
+      <div class="tarifas" style="text-align:left">
+        <div class="tarifa destaca">
+          <div class="tag">Venta urbana</div>
+          <div class="cifra">3%<span>sobre el valor de venta</span></div>
+          <p>Casas, apartamentos, locales y lotes dentro de la ciudad.</p>
+          <ul>
+            <li><svg><use href="#check"/></svg>Se paga cuando se firma el negocio</li>
+            <li><svg><use href="#check"/></svg>Se puede dividir: mitad en la promesa, mitad en la escritura</li>
+            <li><svg><use href="#check"/></svg>Si no se vende, no pagas nada</li>
+          </ul>
+        </div>
+
+        <div class="tarifa">
+          <div class="tag">Venta rural</div>
+          <div class="cifra">8%<span>sobre el valor de venta</span></div>
+          <p>Fincas, lotes campestres y predios fuera del perímetro urbano.</p>
+          <ul>
+            <li><svg><use href="#check"/></svg>Tarifa habitual para predios rurales</li>
+            <li><svg><use href="#check"/></svg>Incluye recorrido y verificación del predio</li>
+            <li><svg><use href="#check"/></svg>Revisión de linderos y documentos</li>
+          </ul>
+        </div>
+
+        <div class="tarifa">
+          <div class="tag">Arriendo</div>
+          <div class="cifra">8%<span>del canon, cada mes</span></div>
+          <p>Administración del arriendo mientras dure el contrato.</p>
+          <ul>
+            <li><svg><use href="#check"/></svg>Búsqueda y estudio del arrendatario</li>
+            <li><svg><use href="#check"/></svg>Contrato, recaudo y seguimiento</li>
+            <li><svg><use href="#check"/></svg>Póliza de arrendamiento opcional, 2,5% adicional</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gratis" style="text-align:left">
+        <svg><use href="#escudo"/></svg>
+        <div><b>Publicar tu inmueble: $0</b>
+        <span>Fotos, ficha en el catálogo, difusión y atención a los interesados van por nuestra cuenta. Si el inmueble no se vende ni se arrienda, no nos debes nada.</span></div>
+      </div>
+
+      <p class="letra-chica">En Colombia no hay una ley que fije estos porcentajes: son los de costumbre en el mercado y quedan por escrito en el contrato de consignación antes de empezar. Si tu caso es distinto —un inmueble muy grande, una venta con urgencia, varios inmuebles a la vez— hablamos y lo ajustamos.</p>
+    </div>
+  </section>
+
+  <!-- ═══ FICHA COMPLETA ═══ -->
+  <section class="seccion agenda" id="publicar">
+    <div class="env centro">
+      <p class="ojo">Ficha completa</p>
+      <h2>Sube tú mismo la información</h2>
+      <p class="bajada">Si ya tienes todos los datos a la mano, llénalos acá. Te queda un mensaje ordenado con todo, listo para enviar — así no hay que andar preguntando de a poquitos.</p>
+
+      <div class="form-largo">
+        <h3>Datos del inmueble</h3>
+        <p>Los campos marcados con * son los mínimos. Lo demás ayuda pero puede ir vacío.</p>
+
+        <div class="dos">
+          <div class="campo"><label for="pOp">Operación *</label>
+            <select id="pOp"><option value="vender">Vender</option><option value="arrendar">Arrendar</option></select></div>
+          <div class="campo"><label for="pTipo">Tipo de inmueble *</label>
+            <select id="pTipo"><option>Casa</option><option>Apartamento</option><option>Lote</option><option>Local</option><option>Finca</option><option>Bodega</option><option>Oficina</option></select></div>
+        </div>
+
+        <div class="dos">
+          <div class="campo"><label for="pBarrio">Barrio o sector *</label>
+            <input id="pBarrio" type="text" placeholder="Ej: Barrio Fátima"></div>
+          <div class="campo"><label for="pDir">Dirección (no se publica)</label>
+            <input id="pDir" type="text" placeholder="Ej: Calle 18 # 24-30"></div>
+        </div>
+
+        <div class="dos">
+          <div class="campo"><label for="pPrecio">Precio que pides *</label>
+            <input id="pPrecio" type="text" inputmode="numeric" placeholder="Ej: 320000000"></div>
+          <div class="campo"><label for="pArea">Área en m² *</label>
+            <input id="pArea" type="text" inputmode="numeric" placeholder="Ej: 140"></div>
+        </div>
+
+        <div class="tres">
+          <div class="campo"><label for="pHab">Habitaciones</label>
+            <input id="pHab" type="text" inputmode="numeric" placeholder="3"></div>
+          <div class="campo"><label for="pBan">Baños</label>
+            <input id="pBan" type="text" inputmode="numeric" placeholder="2"></div>
+          <div class="campo"><label for="pPar">Parqueaderos</label>
+            <input id="pPar" type="text" inputmode="numeric" placeholder="1"></div>
+        </div>
+
+        <div class="dos">
+          <div class="campo"><label for="pEstrato">Estrato</label>
+            <select id="pEstrato"><option value="">Sin especificar</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>Rural</option></select></div>
+          <div class="campo"><label for="pAdmin">Administración mensual</label>
+            <input id="pAdmin" type="text" inputmode="numeric" placeholder="Ej: 180000 (o deja vacío)"></div>
+        </div>
+
+        <div class="campo"><label for="pDoc">¿Cómo están los documentos?</label>
+          <select id="pDoc">
+            <option>Escrituras y paz y salvos al día</option>
+            <option>Escrituras al día, falta algún paz y salvo</option>
+            <option>Tiene hipoteca o gravamen vigente</option>
+            <option>Está en sucesión</option>
+            <option>No estoy seguro, necesito ayuda</option>
+          </select></div>
+
+        <div class="campo"><label for="pDesc">Cuéntanos del inmueble</label>
+          <textarea id="pDesc" placeholder="Ej: casa de dos pisos con patio, cocina integral, zona de ropas, cerca de colegios. Recién pintada."></textarea></div>
+
+        <div class="dos">
+          <div class="campo"><label for="pNombre">Tu nombre *</label>
+            <input id="pNombre" type="text" placeholder="Ej: María Rosero" autocomplete="name"></div>
+          <div class="campo"><label for="pTel">Tu teléfono *</label>
+            <input id="pTel" type="tel" inputmode="tel" placeholder="Ej: 300 123 4567" autocomplete="tel"></div>
+        </div>
+
+        <div class="par-botones">
+          <a class="btn btn-wa" id="pEnviar" data-mide="ficha_completa" href="#" target="_blank" rel="noopener">
+            <svg><use href="#wa"/></svg>Enviar la ficha por WhatsApp</a>
+          <button class="btn btn-linea" id="pCopiar" type="button">Copiar los datos</button>
+        </div>
+
+        <div class="resumen" id="pResumen"></div>
+
+        <p class="nota" style="text-align:left">Las fotos las adjuntas en el mismo chat de WhatsApp después de enviar la ficha. Entre 6 y 12 fotos con buena luz es lo ideal. Nada de lo que escribes aquí se guarda en esta página: el mensaje se arma en tu propio celular.</p>
       </div>
     </div>
   </section>
@@ -575,6 +737,8 @@ dialog>form{position:sticky; top:0; height:0; z-index:3}
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#vender">Vende o arrienda tu inmueble</a></li>
           <li><a href="#agenda">Agendar una visita</a></li>
+          <li><a href="#tarifas">Tarifas y comisiones</a></li>
+          <li><a href="#publicar">Publicar mi inmueble</a></li>
         </ul>
       </div>
     </div>
@@ -775,6 +939,53 @@ document.querySelectorAll("[data-redes]").forEach(c => {
   c.innerHTML = redes.map(r =>
     `<a href="${r.url}" target="_blank" rel="noopener" aria-label="${r.nombre}" data-mide="red_${r.icono}"><svg><use href="#${r.icono}"/></svg></a>`).join("");
 });
+
+// ── ficha completa del propietario ────────────────────────────────
+const P = id => document.getElementById(id);
+const milesCOP = v => {
+  const n = String(v).replace(/\D/g, "");
+  return n ? "$" + Number(n).toLocaleString("es-CO") : "";
+};
+function fichaPropietario(){
+  const op = P("pOp").value, tipo = P("pTipo").value;
+  const L = [];
+  L.push("*Ficha de inmueble para " + (op === "vender" ? "VENTA" : "ARRIENDO") + "*");
+  L.push("");
+  L.push("Tipo: " + tipo);
+  if (P("pBarrio").value.trim()) L.push("Barrio: " + P("pBarrio").value.trim());
+  if (P("pDir").value.trim())    L.push("Dirección: " + P("pDir").value.trim());
+  if (P("pPrecio").value.trim()) L.push("Precio: " + milesCOP(P("pPrecio").value) + (op === "arrendar" ? " / mes" : ""));
+  if (P("pArea").value.trim())   L.push("Área: " + P("pArea").value.replace(/\D/g,"") + " m²");
+  const cuartos = [];
+  if (P("pHab").value.trim()) cuartos.push(P("pHab").value.replace(/\D/g,"") + " habitaciones");
+  if (P("pBan").value.trim()) cuartos.push(P("pBan").value.replace(/\D/g,"") + " baños");
+  if (P("pPar").value.trim()) cuartos.push(P("pPar").value.replace(/\D/g,"") + " parqueaderos");
+  if (cuartos.length) L.push("Distribución: " + cuartos.join(", "));
+  if (P("pEstrato").value)     L.push("Estrato: " + P("pEstrato").value);
+  if (P("pAdmin").value.trim())L.push("Administración: " + milesCOP(P("pAdmin").value) + " / mes");
+  L.push("Documentos: " + P("pDoc").value);
+  if (P("pDesc").value.trim()) { L.push(""); L.push("Descripción: " + P("pDesc").value.trim()); }
+  L.push("");
+  L.push("Propietario: " + (P("pNombre").value.trim() || "(falta el nombre)"));
+  L.push("Teléfono: " + (P("pTel").value.trim() || "(falta el teléfono)"));
+  L.push("");
+  L.push("Envío las fotos en este mismo chat.");
+  return L.join("\n");
+}
+function refrescarFicha(){
+  const t = fichaPropietario();
+  P("pResumen").textContent = t;
+  P("pEnviar").href = waLink("Hola " + CONFIG.nombre + ", quiero publicar mi inmueble.\n\n" + t);
+}
+["pOp","pTipo","pBarrio","pDir","pPrecio","pArea","pHab","pBan","pPar","pEstrato","pAdmin","pDoc","pDesc","pNombre","pTel"]
+  .forEach(id => { const e = P(id); if (e) e.addEventListener("input", refrescarFicha); });
+P("pCopiar").addEventListener("click", () => {
+  navigator.clipboard.writeText(fichaPropietario())
+    .then(() => { P("pCopiar").textContent = "✓ Datos copiados"; setTimeout(() => P("pCopiar").textContent = "Copiar los datos", 2200); })
+    .catch(() => alert("No se pudo copiar. Selecciona el texto del recuadro y cópialo a mano."));
+  medir("copiar_ficha");
+});
+refrescarFicha();
 
 // ── agenda de visitas ─────────────────────────────────────────────
 const aInm = document.getElementById("aInmueble");
