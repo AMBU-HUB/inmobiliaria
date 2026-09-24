@@ -4,285 +4,591 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-<!-- ════════════════════════════════════════════════════════════════
-     1) DATOS DE LA INMOBILIARIA  —  cambia los textos entre comillas
-     ════════════════════════════════════════════════════════════════ -->
 <title>Giobeta Inmobiliaria · Casas, apartamentos y lotes en Pasto, Nariño</title>
-<meta name="description" content="Giobeta Inmobiliaria: casas, apartamentos, lotes y locales en venta y arriendo en Pasto, Nariño. Fotos, precios y contacto directo por WhatsApp.">
+<meta name="description" content="Giobeta Inmobiliaria: casas, apartamentos, lotes y locales en venta y arriendo en Pasto y sus corregimientos. Documentos revisados, precio claro y atención directa por WhatsApp.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://ambu-hub.github.io/inmobiliaria/">
 
-<!-- Vista previa al compartir por WhatsApp / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Giobeta Inmobiliaria">
 <meta property="og:title" content="Giobeta Inmobiliaria · Inmuebles en Pasto, Nariño">
 <meta property="og:description" content="Casas, apartamentos, lotes y locales en venta y arriendo en Pasto. Mira el catálogo y escríbenos por WhatsApp.">
 <meta property="og:url" content="https://ambu-hub.github.io/inmobiliaria/">
-<meta property="og:image" content="https://ambu-hub.github.io/inmobiliaria/fotos/portada.jpg">
+<meta property="og:image" content="https://ambu-hub.github.io/inmobiliaria/fotos/portada.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0F3D35">
+<meta name="theme-color" content="#0B3B33">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230F3D35'/%3E%3Cpath d='M22 52 50 28l28 24v22a4 4 0 0 1-4 4H26a4 4 0 0 1-4-4z' fill='none' stroke='%23E8B45A' stroke-width='7' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" href="fotos/icono.png" sizes="any">
+<link rel="apple-touch-icon" href="fotos/icono.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --verde:#0F3D35;
-  --verde-claro:#17564A;
-  --oro:#C98A2B;
-  --oro-suave:#F6EBDA;
-  --tinta:#16201E;
-  --gris:#5E6B68;
-  --linea:#E3E7E5;
-  --fondo:#FBFAF7;
-  --tarjeta:#FFFFFF;
-  --sombra:0 1px 2px rgba(16,32,28,.05), 0 8px 24px -12px rgba(16,32,28,.18);
-  --radio:16px;
+  --verde:#0B3B33;
+  --verde-hondo:#072A24;
+  --verde-claro:#14594D;
+  --oro:#C0873A;
+  --oro-luz:#E0B160;
+  --crema:#FAF7F2;
+  --crema-2:#F2EDE4;
+  --tinta:#141D1B;
+  --gris:#5C6966;
+  --linea:#E4E1D9;
+  --blanco:#FFFFFF;
+  --wa:#1FA855;
+  --sombra-s:0 1px 2px rgba(11,59,51,.06), 0 6px 18px -10px rgba(11,59,51,.24);
+  --sombra-m:0 2px 4px rgba(11,59,51,.06), 0 20px 40px -20px rgba(11,59,51,.36);
+  --r:18px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  margin:0; overflow-x:hidden; background:var(--fondo); color:var(--tinta);
-  font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
-  font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased;
+  margin:0; overflow-x:hidden; background:var(--crema); color:var(--tinta);
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif; font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3{font-family:Fraunces,Georgia,serif; font-weight:600; line-height:1.15; margin:0}
+h1,h2,h3{font-family:Lora,Georgia,serif; font-weight:600; line-height:1.12; margin:0; letter-spacing:-.015em}
+p{margin:0}
 a{color:inherit}
 img{max-width:100%; display:block}
-.envoltura{width:100%; max-width:1140px; margin:0 auto; padding:0 16px}
+.env{width:100%; max-width:1160px; margin:0 auto; padding:0 20px}
+.centro{text-align:center}
+.ojo{font-size:11.5px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--oro)}
+.seccion{padding:76px 0}
+section[id],footer[id]{scroll-margin-top:84px}
+.seccion h2{font-size:clamp(26px,3.7vw,38px); max-width:20ch}
+.seccion .bajada{color:var(--gris); font-size:17px; max-width:58ch; margin-top:14px}
+.centro h2,.centro .bajada{margin-left:auto; margin-right:auto}
 
-/* ───── Barra superior ───── */
-.barra{
-  position:sticky; top:0; z-index:50; background:rgba(251,250,247,.92);
-  backdrop-filter:saturate(180%) blur(12px); border-bottom:1px solid var(--linea);
+/* ─────── logo ─────── */
+.logo{display:flex; align-items:center; gap:11px; text-decoration:none; min-width:0}
+.logo .marca{width:42px; height:42px; flex:none}
+.logo .palabra{min-width:0}
+.logo .palabra b{
+  display:block; font-family:Lora,Georgia,serif; font-weight:600; font-size:19px;
+  letter-spacing:.04em; line-height:1; white-space:nowrap;
 }
-.barra .envoltura{display:flex; align-items:center; gap:12px; height:64px}
-.marca{display:flex; align-items:center; gap:10px; text-decoration:none; margin-right:auto; min-width:0; overflow:hidden}
-.marca svg{width:34px; height:34px; flex:none}
-.marca-txt{min-width:0; overflow:hidden}
-.marca-txt b{display:block; font-family:Fraunces,serif; font-size:17px; font-weight:600; letter-spacing:-.01em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
-.marca-txt i{display:block; font-style:normal; font-size:11px; color:var(--gris); font-weight:500; letter-spacing:.06em; text-transform:uppercase; white-space:nowrap}
+.logo .palabra i{
+  display:block; font-style:normal; font-size:8.5px; font-weight:700; letter-spacing:.34em;
+  text-transform:uppercase; color:var(--oro); margin-top:4px; white-space:nowrap;
+}
+.logo.claro .palabra b{color:#fff}
+
+/* ─────── botones ─────── */
 .btn{
-  display:inline-flex; align-items:center; justify-content:center; gap:8px;
-  border:0; border-radius:999px; padding:11px 18px; font:inherit; font-weight:600; font-size:14px;
-  cursor:pointer; text-decoration:none; transition:transform .12s ease, filter .12s ease;
+  display:inline-flex; align-items:center; justify-content:center; gap:9px; border:0; border-radius:999px;
+  padding:13px 22px; font:inherit; font-weight:600; font-size:14.5px; cursor:pointer; text-decoration:none;
+  transition:transform .13s ease, box-shadow .13s ease, background .13s ease;
 }
-.btn:active{transform:scale(.97)}
-.btn-wa{background:#1FA855; color:#fff}
-.btn-wa:hover{filter:brightness(1.07)}
-.btn-linea{background:transparent; color:var(--verde); border:1px solid var(--linea)}
-.btn-linea:hover{background:#fff}
-.btn svg{width:17px; height:17px; flex:none}
-@media(max-width:560px){ .barra .btn span{display:none} .barra .btn{padding:11px 13px} }
+.btn svg{width:18px; height:18px; flex:none}
+.btn:active{transform:scale(.975)}
+.btn-wa{background:var(--wa); color:#fff; box-shadow:0 8px 20px -8px rgba(31,168,85,.7)}
+.btn-wa:hover{background:#1c9a4e}
+.btn-oro{background:var(--oro); color:#1D1304; box-shadow:0 8px 20px -8px rgba(192,135,58,.7)}
+.btn-oro:hover{background:var(--oro-luz)}
+.btn-fantasma{background:transparent; color:#fff; border:1px solid rgba(255,255,255,.34)}
+.btn-fantasma:hover{background:rgba(255,255,255,.12)}
+.btn-linea{background:#fff; color:var(--verde); border:1px solid var(--linea)}
+.btn-linea:hover{border-color:var(--verde); box-shadow:var(--sombra-s)}
 
-/* ───── Portada ───── */
-.portada{padding:56px 0 36px; position:relative; overflow:hidden}
-.portada:before{
-  content:""; position:absolute; inset:-120px -10% auto -10%; height:380px;
-  background:radial-gradient(60% 100% at 50% 0%, rgba(201,138,43,.13), transparent 70%);
-  pointer-events:none;
-}
-.portada h1{font-size:clamp(30px,5.4vw,50px); letter-spacing:-.02em; max-width:15ch}
-.portada h1 em{font-style:normal; color:var(--verde); position:relative}
-.portada p{max-width:56ch; color:var(--gris); font-size:17px; margin:18px 0 0}
-.sellos{display:flex; flex-wrap:wrap; gap:8px; margin-top:24px}
-.sello{
-  display:inline-flex; align-items:center; gap:7px; background:var(--oro-suave); color:#6B4A15;
-  border-radius:999px; padding:7px 14px; font-size:13px; font-weight:600;
-}
+/* ─────── barra ─────── */
+.barra{position:sticky; top:0; z-index:60; background:rgba(250,247,242,.9); backdrop-filter:saturate(180%) blur(14px); border-bottom:1px solid var(--linea)}
+.barra .env{display:flex; align-items:center; gap:14px; height:74px}
+.menu{display:flex; gap:26px; margin-left:auto; font-size:14.5px; font-weight:500}
+.menu a{text-decoration:none; color:var(--gris); transition:color .13s}
+.menu a:hover{color:var(--verde)}
+.barra .btn{margin-left:auto}
+.menu + .btn{margin-left:0}
+@media(max-width:900px){ .menu{display:none} }
+@media(max-width:480px){ .barra .btn span{display:none} .barra .btn{padding:13px 15px} .barra .env{height:66px} }
 
-/* ───── Filtros ───── */
-.filtros{
-  position:sticky; top:64px; z-index:40; background:var(--fondo);
-  padding:14px 0; border-bottom:1px solid var(--linea); margin-top:30px;
+/* ─────── portada ─────── */
+.hero{position:relative; background:var(--verde-hondo); color:#fff; overflow:hidden; isolation:isolate}
+.hero:before{
+  content:""; position:absolute; inset:0; z-index:-2;
+  background:
+    radial-gradient(90% 70% at 15% 0%, #14594D 0%, transparent 60%),
+    radial-gradient(70% 60% at 100% 10%, rgba(192,135,58,.30) 0%, transparent 62%),
+    linear-gradient(180deg,#0B3B33 0%,#072A24 100%);
 }
-.filtros .envoltura{display:flex; flex-wrap:wrap; gap:10px; align-items:center}
-.tiras{display:flex; gap:10px; min-width:0; max-width:100%; overflow-x:auto; scrollbar-width:none; -ms-overflow-style:none; padding:1px}
+.montanas{position:absolute; left:0; right:0; bottom:-1px; z-index:-1; width:100%; height:auto; opacity:.5}
+.hero .env{padding-top:84px; padding-bottom:110px; position:relative}
+.hero h1{font-size:clamp(34px,6vw,62px); max-width:16ch; margin-top:18px; color:#fff}
+.hero h1 em{font-style:normal; color:var(--oro-luz)}
+.hero .lema{color:#C0D6D0; font-size:18px; max-width:52ch; margin-top:20px}
+.acciones{display:flex; flex-wrap:wrap; gap:12px; margin-top:32px}
+.acciones .btn{padding:15px 26px; font-size:15.5px}
+.confianza{display:flex; flex-wrap:wrap; gap:26px 38px; margin-top:52px; padding-top:28px; border-top:1px solid rgba(255,255,255,.16)}
+.confianza div{display:flex; align-items:flex-start; gap:11px; max-width:230px}
+.confianza svg{width:21px; height:21px; color:var(--oro-luz); flex:none; margin-top:2px}
+.confianza b{display:block; font-size:14.5px; font-weight:600}
+.confianza span{font-size:13px; color:#9FBCB5; line-height:1.45}
+
+/* ─────── servicios ─────── */
+.servicios{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; margin-top:44px}
+.servicio{background:#fff; border:1px solid var(--linea); border-radius:var(--r); padding:26px 24px; box-shadow:var(--sombra-s)}
+.servicio .ico{width:46px; height:46px; border-radius:13px; background:var(--crema-2); display:grid; place-items:center; margin-bottom:16px}
+.servicio .ico svg{width:23px; height:23px; color:var(--verde)}
+.servicio h3{font-size:17.5px; font-family:Inter,sans-serif; font-weight:700; margin-bottom:7px}
+.servicio p{font-size:14.5px; color:var(--gris); line-height:1.55}
+
+/* ─────── catálogo ─────── */
+.catalogo{background:var(--crema-2); border-top:1px solid var(--linea); border-bottom:1px solid var(--linea)}
+.filtros{display:flex; flex-wrap:wrap; gap:11px; align-items:center; margin:34px 0 8px}
+.tiras{display:flex; gap:11px; min-width:0; max-width:100%; overflow-x:auto; scrollbar-width:none; padding:2px}
 .tiras::-webkit-scrollbar{display:none}
-.grupo{display:flex; gap:6px; background:#EFEFEA; padding:4px; border-radius:999px; flex:none}
+.grupo{display:flex; gap:5px; background:#fff; border:1px solid var(--linea); padding:5px; border-radius:999px; flex:none}
 .grupo button{
   border:0; background:transparent; font:inherit; font-size:13.5px; font-weight:600; color:var(--gris);
-  padding:8px 15px; border-radius:999px; cursor:pointer; transition:all .15s ease; white-space:nowrap;
+  padding:8px 16px; border-radius:999px; cursor:pointer; transition:all .15s ease; white-space:nowrap;
 }
-.grupo button[aria-pressed="true"]{background:var(--verde); color:#fff; box-shadow:var(--sombra)}
-.buscador{
-  flex:1; min-width:180px; display:flex; align-items:center; gap:9px;
-  background:#fff; border:1px solid var(--linea); border-radius:999px; padding:0 16px; height:42px;
-}
-.buscador svg{width:16px; height:16px; color:var(--gris); flex:none}
+.grupo button:hover{color:var(--verde)}
+.grupo button[aria-pressed="true"]{background:var(--verde); color:#fff}
+.buscador{flex:1; min-width:190px; display:flex; align-items:center; gap:10px; background:#fff; border:1px solid var(--linea); border-radius:999px; padding:0 18px; height:46px}
+.buscador svg{width:17px; height:17px; color:var(--gris); flex:none}
 .buscador input{border:0; outline:0; font:inherit; font-size:16px; width:100%; background:transparent}
-@media(max-width:760px){
-  .filtros{position:static}
-  .filtros .envoltura{flex-direction:column; align-items:stretch}
-  .buscador{width:100%}
-  .portada{padding:40px 0 26px}
-}
-
-/* ───── Rejilla de inmuebles ───── */
-.conteo{color:var(--gris); font-size:14px; margin:26px 0 16px; font-weight:500}
-.rejilla{display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:22px; padding-bottom:20px}
+.conteo{color:var(--gris); font-size:14px; margin:20px 0 18px; font-weight:500}
+.rejilla{display:grid; grid-template-columns:repeat(auto-fill,minmax(296px,1fr)); gap:24px}
 .ficha{
-  background:var(--tarjeta); border:1px solid var(--linea); border-radius:var(--radio);
-  overflow:hidden; box-shadow:var(--sombra); display:flex; flex-direction:column;
-  cursor:pointer; transition:transform .16s ease, box-shadow .16s ease;
-  text-align:left; padding:0; font:inherit; color:inherit;
+  background:#fff; border:1px solid var(--linea); border-radius:var(--r); overflow:hidden;
+  box-shadow:var(--sombra-s); display:flex; flex-direction:column; cursor:pointer;
+  transition:transform .17s ease, box-shadow .17s ease; text-align:left; padding:0; font:inherit; color:inherit;
 }
-.ficha:hover{transform:translateY(-3px); box-shadow:0 2px 4px rgba(16,32,28,.06), 0 18px 34px -16px rgba(16,32,28,.3)}
+.ficha:hover{transform:translateY(-4px); box-shadow:var(--sombra-m)}
 .ficha:focus-visible{outline:3px solid var(--oro); outline-offset:3px}
-.foto{position:relative; aspect-ratio:4/3; background:#E8EAE7; overflow:hidden}
-.foto img{width:100%; height:100%; object-fit:cover}
+.foto{position:relative; aspect-ratio:4/3; background:#E6E9E5; overflow:hidden}
+.foto img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease}
+.ficha:hover .foto img{transform:scale(1.04)}
 .etiqueta{
-  position:absolute; top:12px; left:12px; background:rgba(15,61,53,.93); color:#fff;
-  font-size:11.5px; font-weight:700; letter-spacing:.07em; text-transform:uppercase;
-  padding:6px 11px; border-radius:999px; backdrop-filter:blur(4px);
+  position:absolute; top:13px; left:13px; background:rgba(11,59,51,.94); color:#fff; font-size:11px;
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase; padding:6px 12px; border-radius:999px;
 }
-.cuerpo{padding:16px 18px 18px; display:flex; flex-direction:column; gap:7px; flex:1}
-.precio{font-family:Fraunces,serif; font-size:22px; font-weight:600; letter-spacing:-.01em}
+.cuerpo{padding:18px 20px 20px; display:flex; flex-direction:column; gap:7px; flex:1}
+.precio{font-family:Lora,Georgia,serif; font-size:23px; font-weight:600; color:var(--verde)}
 .precio small{font-family:Inter,sans-serif; font-size:13px; font-weight:500; color:var(--gris)}
-.ficha h3{font-size:16.5px; font-family:Inter,sans-serif; font-weight:600}
+.ficha h3{font-size:17px; font-family:Inter,sans-serif; font-weight:600}
 .lugar{color:var(--gris); font-size:14px; display:flex; align-items:center; gap:6px}
 .lugar svg{width:14px; height:14px; flex:none}
-.datos{display:flex; gap:14px; margin-top:auto; padding-top:12px; border-top:1px solid var(--linea); color:var(--gris); font-size:13.5px; font-weight:500}
-.datos span{display:flex; align-items:center; gap:5px}
-.datos svg{width:15px; height:15px}
-.vacio{text-align:center; padding:64px 20px; color:var(--gris)}
+.datos{display:flex; gap:15px; margin-top:auto; padding-top:13px; border-top:1px solid var(--linea); color:var(--gris); font-size:13.5px; font-weight:500}
+.vacio{text-align:center; padding:60px 20px; color:var(--gris)}
 
-/* ───── Ventana de detalle ───── */
+/* ─────── proceso ─────── */
+.pasos{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; margin-top:44px; counter-reset:p}
+.paso{position:relative; padding-top:14px}
+.paso:before{
+  counter-increment:p; content:counter(p); font-family:Lora,Georgia,serif; font-size:60px; font-weight:600;
+  color:var(--crema-2); position:absolute; top:-20px; left:-6px; z-index:0; line-height:1;
+}
+.paso h3,.paso p{position:relative}
+.paso h3{font-size:18px; font-family:Inter,sans-serif; font-weight:700; margin-bottom:8px}
+.paso p{font-size:15px; color:var(--gris)}
+
+/* ─────── captación ─────── */
+.captar{background:var(--verde); color:#fff; position:relative; overflow:hidden}
+.captar:before{content:""; position:absolute; width:520px; height:520px; border-radius:50%; right:-160px; top:-190px;
+  background:radial-gradient(circle,rgba(192,135,58,.30),transparent 68%)}
+.captar .env{position:relative; display:grid; grid-template-columns:1fr 1fr; gap:54px; align-items:center}
+@media(max-width:860px){ .captar .env{grid-template-columns:1fr; gap:32px} }
+.captar h2{color:#fff}
+.captar .bajada{color:#B8D2CC}
+.lista-ok{list-style:none; padding:0; margin:26px 0 0; display:grid; gap:11px}
+.lista-ok li{display:flex; gap:11px; align-items:flex-start; font-size:15px; color:#D6E5E1}
+.lista-ok svg{width:19px; height:19px; color:var(--oro-luz); flex:none; margin-top:3px}
+.tarjeta-form{background:#fff; border-radius:22px; padding:28px 26px; box-shadow:0 30px 60px -28px rgba(0,0,0,.6); color:var(--tinta)}
+.tarjeta-form h3{font-size:20px; margin-bottom:6px}
+.tarjeta-form > p{font-size:14px; color:var(--gris); margin-bottom:20px}
+.campo{margin-bottom:14px}
+.campo label{display:block; font-size:12.5px; font-weight:600; color:var(--gris); margin-bottom:6px}
+.campo input,.campo select{
+  width:100%; border:1px solid var(--linea); border-radius:12px; padding:12px 14px;
+  font:inherit; font-size:15.5px; background:var(--crema); outline:0;
+}
+.campo input:focus,.campo select:focus{border-color:var(--verde); background:#fff}
+.dos{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.tarjeta-form .btn{width:100%; padding:15px; font-size:15.5px; margin-top:6px}
+.nota{font-size:11.5px; color:var(--gris); margin-top:12px; text-align:center; line-height:1.5}
+
+/* ─────── zonas ─────── */
+.zonas{display:flex; flex-wrap:wrap; gap:9px; margin-top:32px}
+.zona{background:#fff; border:1px solid var(--linea); border-radius:999px; padding:9px 17px; font-size:14px; font-weight:500; color:var(--gris)}
+
+/* ─────── ventana ─────── */
 dialog{
-  border:0; padding:0; border-radius:20px; max-width:620px; width:calc(100% - 28px);
-  box-shadow:0 30px 80px -20px rgba(16,32,28,.5); background:var(--tarjeta); color:var(--tinta);
+  border:0; padding:0; border-radius:22px; max-width:640px; width:calc(100% - 28px);
   max-height:calc(100dvh - 32px); overflow:auto; overscroll-behavior:contain;
+  box-shadow:0 40px 90px -25px rgba(11,59,51,.6); background:#fff; color:var(--tinta);
 }
-dialog::backdrop{background:rgba(16,32,28,.55); backdrop-filter:blur(3px)}
+dialog::backdrop{background:rgba(7,42,36,.62); backdrop-filter:blur(4px)}
 dialog>form{position:sticky; top:0; height:0; z-index:3}
-.cerrar{
-  position:absolute; top:12px; right:12px; width:36px; height:36px; border-radius:50%;
-  border:0; background:rgba(255,255,255,.92); cursor:pointer; font-size:19px; line-height:1;
-  display:grid; place-items:center; box-shadow:var(--sombra);
-}
-#dFoto{aspect-ratio:16/10; background:#E8EAE7}
+.cerrar{position:absolute; top:14px; right:14px; width:38px; height:38px; border-radius:50%; border:0;
+  background:rgba(255,255,255,.95); cursor:pointer; font-size:19px; line-height:1; display:grid; place-items:center; box-shadow:var(--sombra-s)}
+#dFoto{aspect-ratio:16/10; background:#E6E9E5}
 #dFoto img{width:100%; height:100%; object-fit:cover}
-.detalle{padding:22px 24px 26px}
-.detalle h2{font-size:23px; margin-bottom:6px}
-.detalle .precio{font-size:27px; margin:14px 0}
-.especificaciones{display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:10px; margin:18px 0}
-.especificaciones div{background:#F4F5F3; border-radius:12px; padding:11px 13px}
-.especificaciones dt{font-size:11.5px; color:var(--gris); text-transform:uppercase; letter-spacing:.06em; font-weight:600}
-.especificaciones dd{margin:3px 0 0; font-weight:600; font-size:15px}
-.detalle p.desc{color:var(--gris); font-size:15px; margin:0 0 20px}
-.acciones{display:flex; gap:10px; flex-wrap:wrap}
-.acciones .btn{flex:1; min-width:150px; padding:14px 18px; font-size:15px}
+.detalle{padding:24px 26px 28px}
+.detalle h2{font-size:25px; margin-bottom:7px}
+.detalle .precio{font-size:29px; margin:15px 0}
+.especs{display:grid; grid-template-columns:repeat(auto-fit,minmax(112px,1fr)); gap:10px; margin:20px 0}
+.especs div{background:var(--crema); border-radius:13px; padding:12px 14px}
+.especs dt{font-size:11px; color:var(--gris); text-transform:uppercase; letter-spacing:.08em; font-weight:700}
+.especs dd{margin:4px 0 0; font-weight:600; font-size:15.5px}
+.detalle p.desc{color:var(--gris); font-size:15px; margin-bottom:22px}
+.acc-detalle{display:flex; gap:11px; flex-wrap:wrap}
+.acc-detalle .btn{flex:1; min-width:150px; padding:14px 18px; font-size:15px}
 
-/* ───── Cierre ───── */
-.cierre{background:var(--verde); color:#fff; margin-top:46px; padding:52px 0 26px}
-.cierre h2{font-size:clamp(23px,3.6vw,31px); max-width:20ch}
-.cierre p{color:#BFD4CE; max-width:52ch; margin:14px 0 24px}
-.cierre .btn{padding:15px 26px; font-size:15.5px; margin:0 10px 10px 0}
-.btn-llamar{background:rgba(255,255,255,.12); color:#fff; border:1px solid rgba(255,255,255,.3)}
-.btn-llamar:hover{background:rgba(255,255,255,.2)}
-.pie{border-top:1px solid rgba(255,255,255,.16); margin-top:40px; padding-top:20px; font-size:13.5px; color:#9FB9B2; display:flex; flex-wrap:wrap; gap:8px 20px}
-.pie a{color:#DCE9E5}
+/* ─────── pie ─────── */
+.pie{background:var(--verde-hondo); color:#fff; padding:64px 0 28px}
+.pie-rejilla{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:42px}
+@media(max-width:760px){ .pie-rejilla{grid-template-columns:1fr; gap:32px} }
+.pie p{color:#9FBCB5; font-size:14.5px; margin-top:16px; max-width:34ch}
+.pie h4{font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--oro); margin:0 0 16px; font-weight:700}
+.pie ul{list-style:none; padding:0; margin:0; display:grid; gap:11px; font-size:14.5px}
+.pie ul a{color:#D6E5E1; text-decoration:none}
+.pie ul a:hover{color:#fff}
+.pie .abajo{border-top:1px solid rgba(255,255,255,.14); margin-top:44px; padding-top:22px; font-size:13px; color:#82A29B; display:flex; flex-wrap:wrap; gap:8px 22px; justify-content:space-between}
 
-/* ───── Botón flotante WhatsApp ───── */
-.flotante{
-  position:fixed; right:16px; bottom:16px; z-index:60; width:56px; height:56px; border-radius:50%;
-  background:#1FA855; display:grid; place-items:center; box-shadow:0 8px 24px rgba(31,168,85,.45);
-  color:#fff; text-decoration:none;
+/* ─────── redes ─────── */
+.redes{display:flex; gap:10px; margin-top:20px}
+.redes a{
+  width:40px; height:40px; border-radius:12px; display:grid; place-items:center;
+  background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.2); color:#fff;
+  transition:background .14s, transform .14s;
 }
-.flotante svg{width:28px; height:28px}
-@media(min-width:900px){ .flotante{display:none} }
+.redes a:hover{background:var(--oro); border-color:var(--oro); color:#1D1304; transform:translateY(-2px)}
+.redes svg{width:19px; height:19px}
+.barra .redes{margin:0 0 0 4px}
+.barra .redes a{width:38px; height:38px; background:transparent; border-color:var(--linea); color:var(--gris)}
+.barra .redes a:hover{background:var(--verde); border-color:var(--verde); color:#fff}
+@media(max-width:900px){ .barra .redes{display:none} }
 
-@media (prefers-reduced-motion:reduce){ *{transition:none!important; scroll-behavior:auto!important} }
+/* ─────── agenda ─────── */
+.agenda{background:var(--crema-2); border-top:1px solid var(--linea)}
+.agenda-caja{
+  background:#fff; border:1px solid var(--linea); border-radius:22px; padding:30px 28px;
+  box-shadow:var(--sombra-s); max-width:660px; margin:36px auto 0;
+}
+.agenda-caja .dos{grid-template-columns:1fr 1fr}
+@media(max-width:560px){ .agenda-caja .dos,.tarjeta-form .dos{grid-template-columns:1fr} }
+.horas{display:flex; flex-wrap:wrap; gap:9px; margin-top:8px}
+.horas button{
+  border:1px solid var(--linea); background:var(--crema); border-radius:999px; padding:10px 17px;
+  font:inherit; font-size:14px; font-weight:600; color:var(--gris); cursor:pointer; transition:all .14s;
+}
+.horas button:hover{border-color:var(--verde); color:var(--verde)}
+.horas button[aria-pressed="true"]{background:var(--verde); border-color:var(--verde); color:#fff}
+.agenda-caja .btn{width:100%; padding:15px; font-size:15.5px; margin-top:20px}
+.aviso-horario{display:flex; gap:10px; align-items:flex-start; background:var(--crema); border-radius:13px; padding:13px 15px; margin-top:18px; font-size:13.5px; color:var(--gris)}
+.aviso-horario svg{width:18px; height:18px; color:var(--oro); flex:none; margin-top:2px}
+
+/* ─────── barra móvil ─────── */
+.movil{
+  position:fixed; left:0; right:0; bottom:0; z-index:70; display:none; gap:10px; padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(250,247,242,.96); backdrop-filter:blur(12px); border-top:1px solid var(--linea);
+}
+.movil .btn{flex:1; padding:14px}
+@media(max-width:760px){ .movil{display:flex} body{padding-bottom:78px} }
+
+@media (prefers-reduced-motion:reduce){ *{transition:none!important; animation:none!important; scroll-behavior:auto!important} }
 </style>
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="isotipo" viewBox="0 0 64 64">
+    <rect width="64" height="64" rx="17" fill="#0B3B33"/>
+    <path d="M13 32.5 32 15.5l19 17" fill="none" stroke="#C0873A" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.5 31.5V48h27V31.5" fill="none" stroke="#FAF7F2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M38.5 39.5H32v8.5" fill="none" stroke="#C0873A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M38.5 39.5v8.5h-6.5" fill="none" stroke="#C0873A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5s-1.2-1.6-1.2-3 .7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6s.7 1.2 1.5 1.9c1 .9 1.9 1.2 2.2 1.3s.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3s0 .7-.2 1.4"/></symbol>
+  <symbol id="tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6.3 3h3l1.5 3.8-2 1.3a12 12 0 0 0 5.1 5.1l1.3-2 3.8 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.3 5.2 2 2 0 0 1 6.3 3"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m4 12.5 5 5L20 6.5"/></symbol>
+  <symbol id="escudo" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 2.5 4.5 5.5V12c0 5 3.3 8.3 7.5 9.5 4.2-1.2 7.5-4.5 7.5-9.5V5.5z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m8.8 11.8 2.3 2.3 4.2-4.4"/></symbol>
+  <symbol id="ojo" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="llave" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m11.3 11.3 8.2 8.2M16 16l2-2M18.5 18.5l2-2"/></symbol>
+  <symbol id="papel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M6 2.5h8l4.5 4.5v14.5H6z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M14 2.5V7h4.5M9 12h6M9 16h6"/></symbol>
+  <symbol id="lupa" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 22v-8h2.7l.5-3.2h-3.2V8.7c0-.9.3-1.6 1.7-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3V14h2.9v8z"/></symbol>
+  <symbol id="reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 7v5.2l3.4 2"/></symbol>
+  <symbol id="camara" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 7.5h4l1.5-2.5h7L17 7.5h4v12H3z"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+</svg>
+
 <header class="barra">
-  <div class="envoltura">
-    <a class="marca" href="#">
-      <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0F3D35"/><path d="M22 52 50 28l28 24v22a4 4 0 0 1-4 4H26a4 4 0 0 1-4-4z" fill="none" stroke="#E8B45A" stroke-width="7" stroke-linejoin="round"/></svg>
-      <span class="marca-txt">
-        <b data-nombre>Giobeta Inmobiliaria</b>
-        <i>Pasto · Nariño</i>
-      </span>
+  <div class="env">
+    <a class="logo" href="#" aria-label="Giobeta Inmobiliaria, inicio">
+      <svg class="marca"><use href="#isotipo"/></svg>
+      <span class="palabra"><b>Giobeta</b><i>Inmobiliaria</i></span>
     </a>
-    <a class="btn btn-wa" data-wa-general href="#">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5s-1.2-1.6-1.2-3 .7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6s.7 1.2 1.5 1.9c1 .9 1.9 1.2 2.2 1.3s.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3s0 .7-.2 1.4"/></svg>
-      <span>WhatsApp</span>
-    </a>
+    <nav class="menu">
+      <a href="#catalogo">Inmuebles</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#vender">Vende o arrienda</a>
+      <a href="#agenda">Agendar visita</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="redes" data-redes></div>
+    <a class="btn btn-wa" data-wa data-mide="whatsapp_barra" href="#"><svg><use href="#wa"/></svg><span>WhatsApp</span></a>
   </div>
 </header>
 
 <main>
-  <section class="portada">
-    <div class="envoltura">
-      <h1>La casa que buscas <em>en Pasto</em>, sin vueltas.</h1>
-      <p>Casas, apartamentos, lotes y locales en venta y arriendo. Cada inmueble con fotos, precio claro y atención directa — sin intermediarios de por medio.</p>
-      <div class="sellos">
-        <span class="sello">✓ Documentos revisados</span>
-        <span class="sello">✓ Precio sin sobrecostos</span>
-        <span class="sello">✓ Acompañamiento en la visita</span>
+  <!-- ═══ PORTADA ═══ -->
+  <section class="hero">
+    <svg class="montanas" viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 175 190 96l150 62 175-104 165 120 190-84 200 108 190-62 180 78v122H0z" fill="#0B3B33" opacity=".85"/>
+      <path d="M0 214 210 150l190 46 200-72 210 88 200-54 210 70 220-44v126H0z" fill="#072A24"/>
+    </svg>
+    <div class="env">
+      <p class="ojo">Pasto · Nariño</p>
+      <h1>La casa que buscas, <em>sin vueltas</em>.</h1>
+      <p class="lema">Casas, apartamentos, lotes y locales en venta y arriendo en Pasto y sus corregimientos. Con documentos revisados y atención directa — sin cadena de intermediarios.</p>
+      <div class="acciones">
+        <a class="btn btn-oro" href="#catalogo"><svg><use href="#lupa"/></svg>Ver inmuebles</a>
+      <a class="btn btn-fantasma" href="#agenda">Agendar visita</a>
+      </div>
+      <div class="confianza">
+        <div><svg><use href="#escudo"/></svg><span><b>Documentos revisados</b><span>Escrituras, libertad y tradición y paz y salvos antes de mostrar.</span></span></div>
+        <div><svg><use href="#papel"/></svg><span><b>Precio claro</b><span>Lo que se publica es lo que se paga. Sin sobrecostos ocultos.</span></span></div>
+        <div><svg><use href="#llave"/></svg><span><b>Acompañamiento</b><span>Desde la primera visita hasta la firma y la entrega.</span></span></div>
       </div>
     </div>
   </section>
 
-  <section class="filtros" aria-label="Filtros">
-    <div class="envoltura">
-      <div class="tiras">
-      <div class="grupo" role="group" aria-label="Operación">
-        <button data-op="todos" aria-pressed="true">Todos</button>
-        <button data-op="venta" aria-pressed="false">Venta</button>
-        <button data-op="arriendo" aria-pressed="false">Arriendo</button>
+  <!-- ═══ SERVICIOS ═══ -->
+  <section class="seccion" id="servicios">
+    <div class="env">
+      <p class="ojo">Qué hacemos</p>
+      <h2>Todo el trámite de un inmueble, en un solo lugar.</h2>
+      <p class="bajada">Si vas a comprar, vender, arrendar o entregar tu inmueble en administración, acá está cada paso acompañado.</p>
+      <div class="servicios">
+        <div class="servicio">
+          <div class="ico"><svg><use href="#lupa"/></svg></div>
+          <h3>Venta de inmuebles</h3>
+          <p>Búsqueda según tu presupuesto y zona, visitas coordinadas y revisión de papeles antes de cualquier promesa.</p>
+        </div>
+        <div class="servicio">
+          <div class="ico"><svg><use href="#llave"/></svg></div>
+          <h3>Arriendos</h3>
+          <p>Inmuebles verificados, estudio del arrendatario y contrato en regla para que ninguna de las dos partes quede expuesta.</p>
+        </div>
+        <div class="servicio">
+          <div class="ico"><svg><use href="#camara"/></svg></div>
+          <h3>Publicación de tu inmueble</h3>
+          <p>Fotos, ficha completa y difusión en este catálogo y por WhatsApp, para que llegue a quien de verdad está buscando.</p>
+        </div>
+        <div class="servicio">
+          <div class="ico"><svg><use href="#papel"/></svg></div>
+          <h3>Acompañamiento documental</h3>
+          <p>Revisión de escrituras, certificados y paz y salvos, y acompañamiento en notaría hasta la entrega de llaves.</p>
+        </div>
       </div>
-      <div class="grupo" role="group" aria-label="Tipo de inmueble">
-        <button data-tipo="todos" aria-pressed="true">Todo tipo</button>
-        <button data-tipo="Casa" aria-pressed="false">Casas</button>
-        <button data-tipo="Apartamento" aria-pressed="false">Apartamentos</button>
-        <button data-tipo="Lote" aria-pressed="false">Lotes</button>
-        <button data-tipo="Local" aria-pressed="false">Locales</button>
-      </div>
-      </div>
-      <label class="buscador">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="buscar" type="search" placeholder="Buscar por barrio o palabra" aria-label="Buscar por barrio o palabra">
-      </label>
     </div>
   </section>
 
-  <div class="envoltura">
-    <p class="conteo" id="conteo"></p>
-    <div class="rejilla" id="rejilla"></div>
-    <p class="vacio" id="vacio" hidden>No hay inmuebles con esos filtros. Escríbenos y te avisamos cuando entre uno así.</p>
-  </div>
+  <!-- ═══ CATÁLOGO ═══ -->
+  <section class="seccion catalogo" id="catalogo">
+    <div class="env">
+      <p class="ojo">Disponibles ahora</p>
+      <h2>Inmuebles en venta y arriendo</h2>
+      <div class="filtros">
+        <div class="tiras">
+          <div class="grupo" role="group" aria-label="Operación">
+            <button data-op="todos" aria-pressed="true">Todos</button>
+            <button data-op="venta" aria-pressed="false">Venta</button>
+            <button data-op="arriendo" aria-pressed="false">Arriendo</button>
+          </div>
+          <div class="grupo" role="group" aria-label="Tipo de inmueble">
+            <button data-tipo="todos" aria-pressed="true">Todo tipo</button>
+            <button data-tipo="Casa" aria-pressed="false">Casas</button>
+            <button data-tipo="Apartamento" aria-pressed="false">Apartamentos</button>
+            <button data-tipo="Lote" aria-pressed="false">Lotes</button>
+            <button data-tipo="Local" aria-pressed="false">Locales</button>
+          </div>
+        </div>
+        <label class="buscador">
+          <svg><use href="#lupa"/></svg>
+          <input id="buscar" type="search" placeholder="Buscar por barrio o palabra" aria-label="Buscar por barrio o palabra">
+        </label>
+      </div>
+      <p class="conteo" id="conteo"></p>
+      <div class="rejilla" id="rejilla"></div>
+      <p class="vacio" id="vacio" hidden>No hay inmuebles con esos filtros. Escríbenos y te avisamos cuando entre uno así.</p>
+    </div>
+  </section>
+
+  <!-- ═══ PROCESO ═══ -->
+  <section class="seccion">
+    <div class="env centro">
+      <p class="ojo">Cómo trabajamos</p>
+      <h2>Tres pasos, sin enredos.</h2>
+      <div class="pasos" style="text-align:left">
+        <div class="paso">
+          <h3>Nos cuentas qué buscas</h3>
+          <p>Zona, presupuesto, cuántas habitaciones y para cuándo lo necesitas. Un mensaje de WhatsApp basta.</p>
+        </div>
+        <div class="paso">
+          <h3>Te mandamos opciones reales</h3>
+          <p>Solo inmuebles disponibles y con papeles en orden. Si algo no sirve, lo decimos antes de hacerte perder el viaje.</p>
+        </div>
+        <div class="paso">
+          <h3>Visitamos y cerramos</h3>
+          <p>Coordinamos la visita, revisamos documentos y te acompañamos hasta la firma y la entrega de llaves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CAPTACIÓN ═══ -->
+  <section class="seccion captar" id="vender">
+    <div class="env">
+      <div>
+        <p class="ojo">¿Tienes un inmueble?</p>
+        <h2>Lo publicamos y te traemos los interesados.</h2>
+        <p class="bajada">Tú no tienes que atender llamadas a toda hora ni mostrar la casa a curiosos. Nosotros filtramos, mostramos y te llevamos solo lo serio.</p>
+        <ul class="lista-ok">
+          <li><svg><use href="#check"/></svg>Ficha con fotos y precio en este catálogo</li>
+          <li><svg><use href="#check"/></svg>Difusión por WhatsApp a quienes ya están buscando</li>
+          <li><svg><use href="#check"/></svg>Filtramos curiosos: solo te llevamos interesados reales</li>
+          <li><svg><use href="#check"/></svg>Revisión de documentos antes de publicar</li>
+        </ul>
+      </div>
+      <div class="tarjeta-form">
+        <h3>Cuéntanos de tu inmueble</h3>
+        <p>Llena estos datos y se abre WhatsApp con el mensaje ya escrito. Tú solo le das enviar.</p>
+        <div class="campo">
+          <label for="fNombre">Tu nombre</label>
+          <input id="fNombre" type="text" placeholder="Ej: María Rosero" autocomplete="name">
+        </div>
+        <div class="dos">
+          <div class="campo">
+            <label for="fOp">Quiero</label>
+            <select id="fOp"><option>Vender</option><option>Arrendar</option></select>
+          </div>
+          <div class="campo">
+            <label for="fTipo">Tipo</label>
+            <select id="fTipo"><option>Casa</option><option>Apartamento</option><option>Lote</option><option>Local</option><option>Finca</option></select>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="fBarrio">Barrio o sector</label>
+          <input id="fBarrio" type="text" placeholder="Ej: Barrio Fátima">
+        </div>
+        <a class="btn btn-wa" id="fEnviar" href="#" target="_blank" rel="noopener">
+          <svg><use href="#wa"/></svg>Enviar por WhatsApp
+        </a>
+        <p class="nota">No se guarda ningún dato en esta página. El mensaje se abre en tu propio WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AGENDA ═══ -->
+  <section class="seccion agenda" id="agenda">
+    <div class="env centro">
+      <p class="ojo">Visitas</p>
+      <h2>Agenda tu visita</h2>
+      <p class="bajada">Escoge el día y la franja que te sirva. Se abre WhatsApp con la cita ya escrita y te confirmamos la dirección exacta.</p>
+      <div class="agenda-caja" style="text-align:left">
+        <div class="dos">
+          <div class="campo">
+            <label for="aInmueble">Inmueble que quieres ver</label>
+            <select id="aInmueble"></select>
+          </div>
+          <div class="campo">
+            <label for="aFecha">Día</label>
+            <input id="aFecha" type="date">
+          </div>
+        </div>
+        <div class="campo">
+          <label>Franja horaria</label>
+          <div class="horas" id="aHoras">
+            <button type="button" data-hora="8:00 a 10:00 a.m." aria-pressed="true">8:00 – 10:00 a.m.</button>
+            <button type="button" data-hora="10:00 a.m. a 12:00 m." aria-pressed="false">10:00 a.m. – 12:00 m.</button>
+            <button type="button" data-hora="2:00 a 4:00 p.m." aria-pressed="false">2:00 – 4:00 p.m.</button>
+            <button type="button" data-hora="4:00 a 6:00 p.m." aria-pressed="false">4:00 – 6:00 p.m.</button>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="aNombre">Tu nombre</label>
+          <input id="aNombre" type="text" placeholder="Ej: Carlos Benavides" autocomplete="name">
+        </div>
+        <a class="btn btn-wa" id="aEnviar" data-mide="agenda_visita" href="#" target="_blank" rel="noopener">
+          <svg><use href="#wa"/></svg>Pedir la cita por WhatsApp
+        </a>
+        <div class="aviso-horario">
+          <svg><use href="#reloj"/></svg>
+          <span>Atendemos visitas de lunes a sábado, de 8:00 a.m. a 6:00 p.m. Los domingos y festivos se coordinan aparte. La cita queda confirmada cuando respondamos el mensaje.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ZONAS ═══ -->
+  <section class="seccion">
+    <div class="env">
+      <p class="ojo">Dónde trabajamos</p>
+      <h2>Pasto y sus corregimientos</h2>
+      <p class="bajada">Si tu zona no aparece, pregúntanos igual: muchas veces tenemos inmuebles que todavía no están publicados.</p>
+      <div class="zonas">
+        <span class="zona">Centro</span><span class="zona">Fátima</span><span class="zona">Las Cuadras</span>
+        <span class="zona">La Aurora</span><span class="zona">Torobajo</span><span class="zona">Palermo</span>
+        <span class="zona">San Felipe</span><span class="zona">Panamericana</span><span class="zona">Catambuco</span>
+        <span class="zona">El Encano</span><span class="zona">Obonuco</span><span class="zona">Jongovito</span>
+        <span class="zona">Vía Oriente</span>
+      </div>
+    </div>
+  </section>
 </main>
 
-<section class="cierre">
-  <div class="envoltura">
-    <h2>¿No encontraste lo que buscabas?</h2>
-    <p>Cuéntanos qué necesitas —zona, presupuesto, cuántas habitaciones— y te avisamos apenas entre un inmueble que encaje.</p>
-    <a class="btn btn-wa" data-wa-general href="#">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5s-1.2-1.6-1.2-3 .7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6s.7 1.2 1.5 1.9c1 .9 1.9 1.2 2.2 1.3s.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3s0 .7-.2 1.4"/></svg>
-      <span>Escribir por WhatsApp</span>
-    </a>
-    <a class="btn btn-llamar" data-tel="texto" href="#">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6.3 3h3l1.5 3.8-2 1.3a12 12 0 0 0 5.1 5.1l1.3-2 3.8 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.3 5.2 2 2 0 0 1 6.3 3"/></svg>
-      <span>Llamar al 000 000 0000</span>
-    </a>
-    <div class="pie">
-      <span>© <span id="anio"></span> <span data-nombre>Giobeta Inmobiliaria</span> · Pasto, Nariño, Colombia</span>
-      <a data-wa-general href="#">WhatsApp</a>
-      <a data-tel href="#">Llamar</a>
-      <a data-correo href="#" hidden>Correo</a>
+<!-- ═══ PIE ═══ -->
+<footer class="pie" id="contacto">
+  <div class="env">
+    <div class="pie-rejilla">
+      <div>
+        <a class="logo claro" href="#">
+          <svg class="marca"><use href="#isotipo"/></svg>
+          <span class="palabra"><b>Giobeta</b><i>Inmobiliaria</i></span>
+        </a>
+        <p>Compra, venta y arriendo de inmuebles en Pasto, Nariño. Atención directa, sin cadena de intermediarios.</p>
+        <div class="redes" data-redes></div>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a data-wa data-mide="whatsapp_pie" href="#">WhatsApp 316 617 2477</a></li>
+          <li><a data-tel data-mide="llamada_pie" href="#">Llamadas 318 210 8002</a></li>
+          <li style="color:#9FBCB5">Lunes a sábado, 8:00 a.m. – 6:00 p.m.</li>
+          <li style="color:#9FBCB5">Pasto, Nariño, Colombia</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#catalogo">Inmuebles disponibles</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#vender">Vende o arrienda tu inmueble</a></li>
+          <li><a href="#agenda">Agendar una visita</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="abajo">
+      <span>© <span id="anio"></span> Giobeta Inmobiliaria. Todos los derechos reservados.</span>
+      <span>Pasto · Nariño · Colombia</span>
     </div>
   </div>
-</section>
+</footer>
 
-<a class="flotante" data-wa-general href="#" aria-label="Escribir por WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5s-1.2-1.6-1.2-3 .7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6s.7 1.2 1.5 1.9c1 .9 1.9 1.2 2.2 1.3s.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3s0 .7-.2 1.4"/></svg>
-</a>
+<div class="movil">
+  <a class="btn btn-wa" data-wa data-mide="whatsapp_movil" href="#"><svg><use href="#wa"/></svg>WhatsApp</a>
+  <a class="btn btn-linea" data-tel data-mide="llamada_movil" href="#"><svg><use href="#tel"/></svg>Llamar</a>
+</div>
 
 <dialog id="ventana">
   <form method="dialog"><button class="cerrar" aria-label="Cerrar">✕</button></form>
@@ -291,13 +597,11 @@ dialog>form{position:sticky; top:0; height:0; z-index:3}
     <h2 id="dTitulo"></h2>
     <p class="lugar" id="dLugar"></p>
     <p class="precio" id="dPrecio"></p>
-    <dl class="especificaciones" id="dEspec"></dl>
+    <dl class="especs" id="dEspec"></dl>
     <p class="desc" id="dDesc"></p>
-    <div class="acciones">
-      <a class="btn btn-wa" id="dWa" href="#" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5s-1.2-1.6-1.2-3 .7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6s.7 1.2 1.5 1.9c1 .9 1.9 1.2 2.2 1.3s.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3s0 .7-.2 1.4"/></svg>
-        Preguntar por este inmueble
-      </a>
+    <div class="acc-detalle">
+      <a class="btn btn-wa" id="dWa" data-mide="whatsapp_inmueble" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Preguntar por este inmueble</a>
+      <button class="btn btn-linea" id="dAgendar" type="button"><svg><use href="#reloj"/></svg>Agendar visita</button>
       <button class="btn btn-linea" id="dCompartir" type="button">Compartir</button>
     </div>
   </div>
@@ -305,151 +609,86 @@ dialog>form{position:sticky; top:0; height:0; z-index:3}
 
 <script>
 /* ═══════════════════════════════════════════════════════════════════
-   2) CONFIGURACIÓN  —  cambia SOLO lo que está entre comillas
+   1) CONFIGURACIÓN  —  cambia SOLO lo que está entre comillas
    ═══════════════════════════════════════════════════════════════════ */
 const CONFIG = {
   nombre:   "Giobeta Inmobiliaria",
   whatsapp: "573166172477",   // WhatsApp del agente (57 + número, sin + ni espacios)
   telefono: "573182108002",   // línea para llamadas
-  correo:   "",               // si pones un correo aquí, aparece en el pie de página
-  ciudad:   "Pasto, Nariño"
+  ciudad:   "Pasto, Nariño",
+
+  // Redes — pega la dirección completa. Si la dejas vacía "", el ícono no aparece.
+  instagram: "",   // ej: "https://instagram.com/giobetainmobiliaria"
+  facebook:  "",   // ej: "https://facebook.com/giobetainmobiliaria"
+
+  // Medición de visitas (Google Analytics). Pega aquí tu ID G-XXXXXXX cuando lo tengas.
+  analytics: ""
 };
 
 /* ═══════════════════════════════════════════════════════════════════
-   3) INMUEBLES  —  copia un bloque { ... }, pégalo y edítalo
+   2) INMUEBLES  —  copia un bloque { ... }, pégalo y edítalo
         operacion: "venta" o "arriendo"
         tipo:      "Casa", "Apartamento", "Lote" o "Local"
         precio:    solo números, sin puntos ni signo $
         foto:      "fotos/mi-foto.jpg"   (deja "" si aún no tienes)
    ═══════════════════════════════════════════════════════════════════ */
 const INMUEBLES = [
-  {
-    id: "001",
-    titulo: "Casa de dos pisos con patio",
-    operacion: "venta",
-    tipo: "Casa",
-    barrio: "Barrio Las Cuadras",
-    precio: 320000000,
-    area: 140,
-    habitaciones: 3,
-    banos: 2,
-    parqueadero: 1,
-    foto: "",
-    descripcion: "Casa independiente de dos pisos, patio posterior y zona de ropas. Sala-comedor amplia, cocina integral y estudio en el segundo piso. Barrio tranquilo, cerca de colegios y transporte."
-  },
-  {
-    id: "002",
-    titulo: "Apartamento remodelado, tercer piso",
-    operacion: "venta",
-    tipo: "Apartamento",
-    barrio: "Barrio Fátima",
-    precio: 185000000,
-    area: 72,
-    habitaciones: 3,
-    banos: 2,
-    parqueadero: 1,
-    foto: "",
-    descripcion: "Apartamento recién remodelado con pisos nuevos y cocina integral. Buena iluminación natural, balcón y parqueadero cubierto. Administración incluida en la cuota."
-  },
-  {
-    id: "003",
-    titulo: "Apartamento amoblado para estrenar",
-    operacion: "arriendo",
-    tipo: "Apartamento",
-    barrio: "Centro",
-    precio: 1450000,
-    area: 58,
-    habitaciones: 2,
-    banos: 1,
-    parqueadero: 0,
-    foto: "",
-    descripcion: "Amoblado completo, listo para entrar. Ideal para pareja o persona sola que trabaje en el centro. Servicios y administración aparte."
-  },
-  {
-    id: "004",
-    titulo: "Lote plano con servicios",
-    operacion: "venta",
-    tipo: "Lote",
-    barrio: "Vía Oriente",
-    precio: 95000000,
-    area: 300,
-    habitaciones: 0,
-    banos: 0,
-    parqueadero: 0,
-    foto: "",
-    descripcion: "Lote plano con acceso vehicular, servicios de agua y luz en la vía. Escrituras al día y libertad y tradición limpia. Apto para vivienda campestre."
-  },
-  {
-    id: "005",
-    titulo: "Local comercial sobre vía principal",
-    operacion: "arriendo",
-    tipo: "Local",
-    barrio: "Av. Panamericana",
-    precio: 2800000,
-    area: 85,
-    habitaciones: 0,
-    banos: 1,
-    parqueadero: 0,
-    foto: "",
-    descripcion: "Local en primer piso con vitrina sobre vía principal y alto flujo peatonal. Baño independiente y bodega interna. Se arrienda con contrato a un año."
-  },
-  {
-    id: "006",
-    titulo: "Casa campestre con jardín",
-    operacion: "venta",
-    tipo: "Casa",
-    barrio: "Corregimiento de Catambuco",
-    precio: 410000000,
-    area: 210,
-    habitaciones: 4,
-    banos: 3,
-    parqueadero: 2,
-    foto: "",
-    descripcion: "Casa campestre en lote de 800 m² con jardín, zona de asados y parqueadero para dos vehículos. Chimenea en sala y habitación principal con vestier."
-  }
+  { id:"001", titulo:"Casa de dos pisos con patio", operacion:"venta", tipo:"Casa",
+    barrio:"Barrio Las Cuadras", precio:320000000, area:140, habitaciones:3, banos:2, parqueadero:1, foto:"",
+    descripcion:"Casa independiente de dos pisos, patio posterior y zona de ropas. Sala-comedor amplia, cocina integral y estudio en el segundo piso. Barrio tranquilo, cerca de colegios y transporte." },
+
+  { id:"002", titulo:"Apartamento remodelado, tercer piso", operacion:"venta", tipo:"Apartamento",
+    barrio:"Barrio Fátima", precio:185000000, area:72, habitaciones:3, banos:2, parqueadero:1, foto:"",
+    descripcion:"Apartamento recién remodelado con pisos nuevos y cocina integral. Buena iluminación natural, balcón y parqueadero cubierto. Administración incluida en la cuota." },
+
+  { id:"003", titulo:"Apartamento amoblado para estrenar", operacion:"arriendo", tipo:"Apartamento",
+    barrio:"Centro", precio:1450000, area:58, habitaciones:2, banos:1, parqueadero:0, foto:"",
+    descripcion:"Amoblado completo, listo para entrar. Ideal para pareja o persona sola que trabaje en el centro. Servicios y administración aparte." },
+
+  { id:"004", titulo:"Lote plano con servicios", operacion:"venta", tipo:"Lote",
+    barrio:"Vía Oriente", precio:95000000, area:300, habitaciones:0, banos:0, parqueadero:0, foto:"",
+    descripcion:"Lote plano con acceso vehicular, servicios de agua y luz en la vía. Escrituras al día y libertad y tradición limpia. Apto para vivienda campestre." },
+
+  { id:"005", titulo:"Local comercial sobre vía principal", operacion:"arriendo", tipo:"Local",
+    barrio:"Av. Panamericana", precio:2800000, area:85, habitaciones:0, banos:1, parqueadero:0, foto:"",
+    descripcion:"Local en primer piso con vitrina sobre vía principal y alto flujo peatonal. Baño independiente y bodega interna. Se arrienda con contrato a un año." },
+
+  { id:"006", titulo:"Casa campestre con jardín", operacion:"venta", tipo:"Casa",
+    barrio:"Corregimiento de Catambuco", precio:410000000, area:210, habitaciones:4, banos:3, parqueadero:2, foto:"",
+    descripcion:"Casa campestre en lote de 800 m² con jardín, zona de asados y parqueadero para dos vehículos. Chimenea en sala y habitación principal con vestier." }
 ];
 
 /* ═══ De aquí para abajo no necesitas tocar nada ═══════════════════ */
 
 const pesos = n => "$" + n.toLocaleString("es-CO");
-const waLink = txt => "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(txt);
+const waLink = t => "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(t);
+const svgUso = id => `<svg viewBox="0 0 24 24" width="14" height="14"><use href="#${id}"/></svg>`;
 
-document.querySelectorAll("[data-nombre]").forEach(e => e.textContent = CONFIG.nombre);
-document.querySelectorAll("[data-wa-general]").forEach(e =>
+document.querySelectorAll("[data-wa]").forEach(e =>
   e.href = waLink("Hola " + CONFIG.nombre + ", vi su catálogo de inmuebles y quisiera información."));
-document.querySelectorAll("[data-correo]").forEach(e => {
-  if (CONFIG.correo) { e.href = "mailto:" + CONFIG.correo; e.hidden = false; } else { e.remove(); }
-});
-const telBonito = t => t.replace(/^57/, "").replace(/(\d{3})(\d{3})(\d{4})/, "$1 $2 $3");
-document.querySelectorAll("[data-tel]").forEach(e => {
-  e.href = "tel:+" + CONFIG.telefono;
-  if (e.dataset.tel === "texto") e.innerHTML = e.innerHTML.replace("000 000 0000", telBonito(CONFIG.telefono));
-});
+document.querySelectorAll("[data-tel]").forEach(e => e.href = "tel:+" + CONFIG.telefono);
 document.getElementById("anio").textContent = new Date().getFullYear();
 
-const marcador = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>`;
-const marcoFoto = `<svg viewBox="0 0 100 75" width="100%" height="100%" preserveAspectRatio="none" aria-hidden="true"><rect width="100" height="75" fill="#E8EAE7"/><path d="M28 46 50 28l22 18v14a2 2 0 0 1-2 2H30a2 2 0 0 1-2-2z" fill="none" stroke="#B9C2BE" stroke-width="2.5" stroke-linejoin="round"/></svg>`;
+const marcoFoto = `<svg viewBox="0 0 100 75" width="100%" height="100%" preserveAspectRatio="none" aria-hidden="true">
+  <rect width="100" height="75" fill="#E6E9E5"/>
+  <path d="M30 45 50 28l20 17v14a2 2 0 0 1-2 2H32a2 2 0 0 1-2-2z" fill="none" stroke="#BCC4C0" stroke-width="2.4" stroke-linejoin="round"/></svg>`;
 
-let filtroOp = "todos", filtroTipo = "todos", texto = "";
+let fOp = "todos", fTipo = "todos", txt = "";
 
-function visibles(){
-  const t = texto.trim().toLowerCase();
+const visibles = () => {
+  const t = txt.trim().toLowerCase();
   return INMUEBLES.filter(i =>
-    (filtroOp === "todos" || i.operacion === filtroOp) &&
-    (filtroTipo === "todos" || i.tipo === filtroTipo) &&
-    (!t || (i.titulo + " " + i.barrio + " " + i.tipo + " " + i.descripcion).toLowerCase().includes(t))
-  );
-}
+    (fOp === "todos" || i.operacion === fOp) &&
+    (fTipo === "todos" || i.tipo === fTipo) &&
+    (!t || (i.titulo + " " + i.barrio + " " + i.tipo + " " + i.descripcion).toLowerCase().includes(t)));
+};
 
 function pintar(){
   const lista = visibles();
-  const rejilla = document.getElementById("rejilla");
   document.getElementById("vacio").hidden = lista.length > 0;
-  document.getElementById("conteo").textContent =
-    lista.length === 0 ? "" :
-    lista.length + (lista.length === 1 ? " inmueble disponible" : " inmuebles disponibles");
-
-  rejilla.innerHTML = lista.map(i => `
+  document.getElementById("conteo").textContent = lista.length
+    ? lista.length + (lista.length === 1 ? " inmueble disponible" : " inmuebles disponibles") : "";
+  document.getElementById("rejilla").innerHTML = lista.map(i => `
     <button class="ficha" data-id="${i.id}" aria-label="Ver ${i.titulo}">
       <div class="foto">
         ${i.foto ? `<img src="${i.foto}" alt="${i.titulo}" loading="lazy">` : marcoFoto}
@@ -458,7 +697,7 @@ function pintar(){
       <div class="cuerpo">
         <p class="precio">${pesos(i.precio)}${i.operacion === "arriendo" ? " <small>/ mes</small>" : ""}</p>
         <h3>${i.titulo}</h3>
-        <p class="lugar">${marcador}${i.barrio}</p>
+        <p class="lugar">${svgUso("pin")}${i.barrio}</p>
         <div class="datos">
           <span>${i.area} m²</span>
           ${i.habitaciones ? `<span>${i.habitaciones} hab.</span>` : ""}
@@ -470,65 +709,148 @@ function pintar(){
 }
 
 document.getElementById("rejilla").addEventListener("click", ev => {
-  const f = ev.target.closest(".ficha");
-  if (f) abrir(f.dataset.id);
+  const f = ev.target.closest(".ficha"); if (f) abrir(f.dataset.id);
 });
-
 document.querySelectorAll("[data-op]").forEach(b => b.addEventListener("click", () => {
-  filtroOp = b.dataset.op;
+  fOp = b.dataset.op;
   document.querySelectorAll("[data-op]").forEach(x => x.setAttribute("aria-pressed", x === b));
   pintar();
 }));
 document.querySelectorAll("[data-tipo]").forEach(b => b.addEventListener("click", () => {
-  filtroTipo = b.dataset.tipo;
+  fTipo = b.dataset.tipo;
   document.querySelectorAll("[data-tipo]").forEach(x => x.setAttribute("aria-pressed", x === b));
   pintar();
 }));
-document.getElementById("buscar").addEventListener("input", e => { texto = e.target.value; pintar(); });
+document.getElementById("buscar").addEventListener("input", e => { txt = e.target.value; pintar(); });
 
 const ventana = document.getElementById("ventana");
 function abrir(id){
-  const i = INMUEBLES.find(x => x.id === id);
-  if (!i) return;
-  document.getElementById("dFoto").innerHTML = i.foto
-    ? `<img src="${i.foto}" alt="${i.titulo}">` : marcoFoto;
+  const i = INMUEBLES.find(x => x.id === id); if (!i) return;
+  document.getElementById("dFoto").innerHTML = i.foto ? `<img src="${i.foto}" alt="${i.titulo}">` : marcoFoto;
   document.getElementById("dTitulo").textContent = i.titulo;
-  document.getElementById("dLugar").innerHTML = marcador + i.barrio + " · " + CONFIG.ciudad;
+  document.getElementById("dLugar").innerHTML = svgUso("pin") + i.barrio + " · " + CONFIG.ciudad;
   document.getElementById("dPrecio").innerHTML = pesos(i.precio) + (i.operacion === "arriendo" ? " <small>/ mes</small>" : "");
   const filas = [["Tipo", i.tipo], ["Área", i.area + " m²"]];
   if (i.habitaciones) filas.push(["Habitaciones", i.habitaciones]);
   if (i.banos) filas.push(["Baños", i.banos]);
   if (i.parqueadero) filas.push(["Parqueadero", i.parqueadero]);
   filas.push(["Código", i.id]);
-  document.getElementById("dEspec").innerHTML = filas.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("");
+  document.getElementById("dEspec").innerHTML = filas.map(([k,v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("");
   document.getElementById("dDesc").textContent = i.descripcion;
-  document.getElementById("dWa").href = waLink(
-    "Hola " + CONFIG.nombre + ", me interesa el inmueble " + i.id + " — " + i.titulo +
-    " (" + i.barrio + ", " + pesos(i.precio) + "). ¿Sigue disponible?");
+  document.getElementById("dWa").href = waLink("Hola " + CONFIG.nombre + ", me interesa el inmueble " + i.id +
+    " — " + i.titulo + " (" + i.barrio + ", " + pesos(i.precio) + "). ¿Sigue disponible?");
   document.getElementById("dCompartir").onclick = () => {
-    const datos = { title: i.titulo, text: i.titulo + " · " + i.barrio + " · " + pesos(i.precio), url: location.href };
-    if (navigator.share) navigator.share(datos).catch(() => {});
+    const d = { title: i.titulo, text: i.titulo + " · " + i.barrio + " · " + pesos(i.precio), url: location.href };
+    if (navigator.share) navigator.share(d).catch(()=>{});
     else { navigator.clipboard.writeText(location.href); alert("Enlace copiado"); }
   };
+  document.getElementById("dAgendar").onclick = () => { ventana.close(); agendarDesdeFicha(i.id); };
+  medir("ver_inmueble", { codigo: i.id, barrio: i.barrio });
   ventana.showModal();
 }
 ventana.addEventListener("click", e => { if (e.target === ventana) ventana.close(); });
 
-// Ficha de negocio para Google
+// formulario de captación → WhatsApp
+function armarMensaje(){
+  const n = document.getElementById("fNombre").value.trim();
+  const op = document.getElementById("fOp").value.toLowerCase();
+  const tp = document.getElementById("fTipo").value.toLowerCase();
+  const b  = document.getElementById("fBarrio").value.trim();
+  document.getElementById("fEnviar").href = waLink(
+    "Hola " + CONFIG.nombre + ". " + (n ? "Soy " + n + ". " : "") +
+    "Quiero " + op + " " + (tp === "casa" || tp === "finca" ? "una " : "un ") + tp +
+    (b ? " en " + b : "") + ". ¿Me pueden asesorar?");
+}
+["fNombre","fOp","fTipo","fBarrio"].forEach(id =>
+  document.getElementById(id).addEventListener("input", armarMensaje));
+armarMensaje();
+
+// ── redes sociales ────────────────────────────────────────────────
+const redes = [
+  { url: CONFIG.instagram, icono: "ig", nombre: "Instagram" },
+  { url: CONFIG.facebook,  icono: "fb", nombre: "Facebook"  }
+].filter(r => r.url);
+document.querySelectorAll("[data-redes]").forEach(c => {
+  if (!redes.length) { c.remove(); return; }
+  c.innerHTML = redes.map(r =>
+    `<a href="${r.url}" target="_blank" rel="noopener" aria-label="${r.nombre}" data-mide="red_${r.icono}"><svg><use href="#${r.icono}"/></svg></a>`).join("");
+});
+
+// ── agenda de visitas ─────────────────────────────────────────────
+const aInm = document.getElementById("aInmueble");
+aInm.innerHTML = '<option value="">Todavía no lo he escogido</option>' +
+  INMUEBLES.map(i => `<option value="${i.id}">${i.id} — ${i.titulo} (${i.barrio})</option>`).join("");
+
+const hoy = new Date(); hoy.setMinutes(hoy.getMinutes() - hoy.getTimezoneOffset());
+const aFecha = document.getElementById("aFecha");
+aFecha.min = hoy.toISOString().slice(0, 10);
+const manana = new Date(hoy); manana.setDate(manana.getDate() + 1);
+aFecha.value = manana.toISOString().slice(0, 10);
+
+let franja = "8:00 a 10:00 a.m.";
+document.querySelectorAll("#aHoras button").forEach(b => b.addEventListener("click", () => {
+  franja = b.dataset.hora;
+  document.querySelectorAll("#aHoras button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  armarCita();
+}));
+
+function fechaBonita(v){
+  if (!v) return "";
+  const [a, m, d] = v.split("-").map(Number);
+  const dias = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+  const meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+  const f = new Date(a, m - 1, d);
+  return dias[f.getDay()] + " " + d + " de " + meses[m - 1];
+}
+function armarCita(){
+  const n = document.getElementById("aNombre").value.trim();
+  const id = aInm.value;
+  const inm = INMUEBLES.find(x => x.id === id);
+  document.getElementById("aEnviar").href = waLink(
+    "Hola " + CONFIG.nombre + ". " + (n ? "Soy " + n + ". " : "") +
+    "Quiero agendar una visita" + (inm ? " al inmueble " + inm.id + " — " + inm.titulo + " (" + inm.barrio + ")" : "") +
+    " el " + fechaBonita(aFecha.value) + ", en la franja de " + franja + ". ¿Queda confirmada?");
+}
+["aInmueble","aFecha","aNombre"].forEach(id =>
+  document.getElementById(id).addEventListener("input", armarCita));
+armarCita();
+
+// enlace directo a la agenda desde la ventana de detalle
+function agendarDesdeFicha(id){
+  aInm.value = id; armarCita();
+  document.getElementById("agenda").scrollIntoView({ behavior:"smooth", block:"start" });
+}
+
+// ── medición de visitas, llamadas y mensajes ──────────────────────
+if (CONFIG.analytics) {
+  const g = document.createElement("script");
+  g.async = true; g.src = "https://www.googletagmanager.com/gtag/js?id=" + CONFIG.analytics;
+  document.head.appendChild(g);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag("js", new Date()); gtag("config", CONFIG.analytics);
+}
+function medir(evento, extra){
+  if (window.gtag) gtag("event", evento, extra || {});
+}
+document.addEventListener("click", ev => {
+  const e = ev.target.closest("[data-mide]");
+  if (e) medir(e.dataset.mide);
+}, true);
+
+// ficha de negocio para Google
 const ficha = {
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
+  "@context":"https://schema.org", "@type":"RealEstateAgent",
   name: CONFIG.nombre,
+  description: "Compra, venta y arriendo de inmuebles en Pasto, Nariño.",
   areaServed: CONFIG.ciudad,
-  address: { "@type": "PostalAddress", addressLocality: "Pasto", addressRegion: "Nariño", addressCountry: "CO" },
-  telephone: "+" + CONFIG.whatsapp,
-  email: CONFIG.correo,
-  url: location.href
+  address:{ "@type":"PostalAddress", addressLocality:"Pasto", addressRegion:"Nariño", addressCountry:"CO" },
+  telephone:"+" + CONFIG.telefono, url: location.href,
+  openingHours:"Mo-Sa 08:00-18:00"
 };
-const s = document.createElement("script");
-s.type = "application/ld+json";
-s.textContent = JSON.stringify(ficha);
-document.head.appendChild(s);
+const sc = document.createElement("script");
+sc.type = "application/ld+json"; sc.textContent = JSON.stringify(ficha);
+document.head.appendChild(sc);
 
 pintar();
 </script>
